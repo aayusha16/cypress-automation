@@ -21,5 +21,13 @@ export const selector = {
 
   language_field: '[name="account.languagePreference"]',
   favCategory_id: '[name="account.favouriteCategoryId"]',
-  newAccount: '[name="newAccount"]'
+  newAccount: '[name="newAccount"]',
+
+
+  search_field: '[name="keyword"]',
+  searchbutton: '[name="searchProducts"]',
+  FreshWater: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[1]/a',
+  Addtocart: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[5]/a',
+  Dog: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[1]/a'
+
 };

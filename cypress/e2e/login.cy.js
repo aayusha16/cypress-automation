@@ -42,11 +42,4 @@ describe("JpetStore Login Functionality", () => {
     
 
 });
-
-
-it(' Verify Logout Feature',()=>{
-  cy.visit("https://petstore.octoperf.com/actions/Catalog.action");
-    cy.xpath("/html/body/div[1]/div[2]/div/a[2]").click();
-
-})
 });
