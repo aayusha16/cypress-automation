@@ -28,6 +28,21 @@ export const selector = {
   searchbutton: '[name="searchProducts"]',
   FreshWater: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[1]/a',
   Addtocart: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[5]/a',
-  Dog: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[1]/a'
+  Dog: '/html/body/div[2]/div[2]/table/tbody/tr[2]/td[1]/a',
+
+  CheckoutButton: '/html/body/div[2]/div[2]/div[1]/a',
+  CardType:'[name="order.cardType"]',
+  CardNumber:'[name="order.creditCard"]',
+  ExpiryField:'[name="order.expiryDate"]',
+  Biling_FirstName:'[name="order.billToFirstName"]',
+  Biling_LastName:'[name="order.billToLastName"]',
+  B_Address1:'[name="order.billAddress1"]',
+  B_address2:'[name="order.billAddress2"]',
+  B_City:'[name="order.billCity"]',
+  B_state:'[name="order.billState"]',
+  BZip:'[name="order.billZip"]',
+  Bcountry:'[name="order.billCountry"]',
+  Shipping:'[name="shippingAddressRequired"]',
+  continue:'[name="newOrder"]'
 
 };
