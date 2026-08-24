@@ -2,7 +2,7 @@ name: Cypress Tests
 
 on:
   schedule:
-    - cron: "15 11 * * *"  # 5:00 PM Nepal Time
+    - cron: "15 11 * * *" # 5:00 PM Nepal Time
 
   workflow_dispatch:
 
@@ -14,12 +14,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run Cypress tests
+      - name: Run Cypress Tests
         uses: cypress-io/github-action@v7
         continue-on-error: true
         with:
           browser: chrome
           install: true
+        env:
+          CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
+          CYPRESS_USERNAME: ${{ secrets.CYPRESS_USERNAME }}
+          CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
 
       - name: Upload Cypress screenshots
         if: always()
